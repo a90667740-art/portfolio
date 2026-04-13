@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="이력과 포트폴리오를 한 페이지로 정리하고, 커피챗 요청을 받을 수 있는 개인 웹사이트입니다." />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+    <header class="site-header" id="top">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="맨 위로">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span class="brand-text" id="brandName">계승범</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">메뉴 열기</span>
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+        <div class="nav-menu" id="navMenu">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#coffeechat">Coffee Chat</a>
+        </div>
+      </nav>
+      <section class="hero" aria-label="소개">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow reveal">안녕하세요, 저는</p>
+            <h1 class="title reveal"><span class="name" id="heroName">계승범</span> 입니다.</h1>
+            <p class="subtitle reveal">
+              <span class="typing" aria-label="한 줄 소개">
+                <span id="typingText"></span><span class="caret" aria-hidden="true"></span>
+              </span>
+            </p>
+            <div class="hero-cta reveal">
+              <a class="btn primary" href="#coffeechat">커피챗 요청하기</a>
+              <a class="btn ghost" href="#experience">경력/프로젝트 보기</a>
+            </div>
+            <ul class="meta reveal" aria-label="빠른 정보">
+              <li>
+                <span class="meta-k">Email</span>
+                <a class="meta-v" href="mailto:90667740@naver.com">90667740@naver.com</a>
+              </li>
+              <li>
+                <span class="meta-k">Phone</span>
+                <a class="meta-v" href="tel:+821090667740">010-9066-7740</a>
+              </li>
+              <li>
+                <span class="meta-k">Location</span>
+                <span class="meta-v">경기도 성남시 분당구 판교역로 72</span>
+              </li>
+            </ul>
+          </div>
+          <div class="hero-card reveal" role="img" aria-label="프로필 카드">
+            <div class="avatar" aria-hidden="true"></div>
+            <div class="hero-card-body">
+              <p class="hero-card-title">Focus</p>
+              <p class="hero-card-desc"><strong>Tech · Data · Digital Ad · Business</strong>를 연결해 성장을 설계합니다.</p>
+              <div class="pill-row" aria-hidden="true">
+                <span class="pill">Global Media Governance</span>
+                <span class="pill">Ad-Tech Architect</span>
+                <span class="pill">Data-Driven Growth</span>
+                <span class="pill">Full-funnel Performance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-hint" aria-hidden="true"><span class="scroll-dot"></span></div>
+      </section>
+    </header>
+    <main id="main">
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>About Me</h2>
+            <p class="section-sub">디지털 마케팅의 <strong>전략</strong>과 <strong>기술</strong>을 연결하는 리더십을 소개합니다.</p>
+          </div>
+          <div class="grid-2">
+            <div class="card reveal">
+              <h3>Professional Summary</h3>
+              <p class="body"><strong>기술과 비즈니스를 연결하는 디지털 전략가</strong>로서, 글로벌 미디어 파트너십부터 애드테크 플랫폼 설계까지 한국 디지털 광고 시장의 전환점을 만들어 왔습니다.</p>
+              <ul class="bullets">
+                <li>IGAWorks/디지털퍼스트 <strong>창립 멤버</strong>로 비즈니스 스케일업을 리드하며 <strong>연간 2,000억 원</strong> 규모 성장 체계를 구축</li>
+                <li>Google <strong>DVIP(KIP)</strong>, Meta <strong>FMP Ad-Tech Badge</strong> 등 최상위 파트너십/인증 확보 및 <strong>API 권한</strong> 기반 기술 우위 선점</li>
+                <li><strong>TradingWorks</strong> ATD 플랫폼 아키텍팅(취급고 <strong>3,000억 원</strong> 규모) 및 대형 광고주(예: LG전자 56개국, AliExpress, 롯데온) <strong>풀퍼널</strong> 전략 총괄</li>
+              </ul>
+              <div class="mini-divider" aria-hidden="true"></div>
+              <p class="body subtle">Core Strength: <strong>Global Media Governance</strong> · <strong>Ad-Tech Solution Design</strong> · <strong>Data-Driven Growth</strong></p>
+            </div>
+            <div class="card reveal">
+              <h3>Core Expertise</h3>
+              <ul class="bullets">
+                <li><strong>Global Media Governance</strong>: Google/Meta 등 글로벌 미디어와 전략적 파트너십 리딩 및 <strong>최상위 API 권한</strong> 확보</li>
+                <li><strong>Ad-Tech Solution Architecting</strong>: DSP/SSP/ATD 제품 로드맵 수립, 기술 명세 설계, <strong>비즈니스↔개발 브릿지</strong> 리더십</li>
+                <li><strong>Data Monetization &amp; Optimization</strong>: 데이터 수집–분석–활성화–측정 전 과정 구조화, <strong>DMP 자동화 로직</strong> 설계로 운영 효율 극대화</li>
+                <li><strong>Performance Marketing Full-Stack</strong>: 글로벌 운영 표준 가이드 수립 및 ROI 중심 퍼포먼스 최적화(56개국 등 대규모 운영 포함)</li>
+              </ul>
+              <div class="mini-divider" aria-hidden="true"></div>
+              <ul class="bullets">
+                <li><strong>Education</strong>: 경희대학교 국제경영학 &amp; 신문방송학 학사(2005.08)</li>
+                <li><strong>Certification</strong>: GAIQ, Google Ads Fundamental, Google Ads Display</li>
+                <li><strong>Thought Leadership</strong>: 『<strong>데이터 드리븐 마케팅 101</strong>』 공저(실전 파트 집필)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section alt" id="experience">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Experience</h2>
+            <p class="section-sub">조직 성장, 파트너십, 플랫폼 아키텍처를 중심으로 경력을 요약했습니다.</p>
+          </div>
+          <div class="xp-grid">
+            <article class="xp-card reveal">
+              <div class="xp-top">
+                <h3 class="xp-title">IGAWorks / DigitalFirst</h3>
+                <span class="badge">2015.07 – Present</span>
+              </div>
+              <p class="xp-desc">디지털퍼스트 <strong>창립 멤버</strong>로서 광고본부를 총괄하며, 애드테크 플랫폼 제품 전략과 아키텍처를 리드했습니다.</p>
+              <ul class="xp-points">
+                <li><strong>연간 2,000억 원</strong> 규모 비즈니스 성장 체계 구축 및 퍼포먼스 대행 체계 확립</li>
+                <li>LG전자 글로벌 바이럴 시딩(56개국) <strong>3년 전담</strong> 및 글로벌 운영 표준 가이드 수립</li>
+                <li>AliExpress, 11번가(국내/태국), 롯데온 등 커머스 플랫폼 <strong>비딩 수주</strong> 및 성과 최적화</li>
+                <li>글로벌 API 통합형 ATD 플랫폼 <strong>TradingWorks</strong> 설계/상용화(취급고 <strong>3,000억 원</strong> 규모)</li>
+                <li>Google Ads API Standard Access 및 Meta <strong>FMP Ad-Tech Badge</strong> 확보로 기술 우위 선점</li>
+              </ul>
+              <div class="xp-tags" aria-label="기술 스택">
+                <span>Media Governance</span><span>Ad-Tech</span><span>Data</span><span>Growth</span>
+              </div>
+            </article>
+            <article class="xp-card reveal">
+              <div class="xp-top">
+                <h3 class="xp-title">Nasmedia</h3>
+                <span class="badge">2005.10 – 2015.06</span>
+              </div>
+              <p class="xp-desc">글로벌 미디어 파트너십을 총괄하며 미디어 인텔리전스를 강화했고, 전사 거버넌스/교육 체계를 구축했습니다.</p>
+              <ul class="xp-points">
+                <li>국내 최초 Google <strong>DVIP(KIP)</strong> 전략적 파트너십 체결 및 2년 연속 목표 달성</li>
+                <li><strong>Google Ads Master MCC</strong> 거버넌스 설계 및 전사 전문 교육 체계 수립</li>
+                <li>Meta(Facebook) Korea 국내 최초 계약 및 전담 운영 조직 빌딩</li>
+                <li>최단기 팀장 승진(2년) 및 단일 캠페인 <strong>100억 원</strong> 규모 운영 관리</li>
+              </ul>
+              <div class="xp-tags" aria-label="역량">
+                <span>Partnership</span><span>Governance</span><span>Enablement</span>
+              </div>
+            </article>
+            <article class="xp-card reveal">
+              <div class="xp-top">
+                <h3 class="xp-title">Selected Achievements</h3>
+                <span class="badge">Highlights</span>
+              </div>
+              <p class="xp-desc">시장 변화(쿠키리스/AI 자동화/1st-party 데이터) 속에서 <strong>구조를 설계하고 실행</strong>하는 방식으로 성과를 만들어 왔습니다.</p>
+              <ul class="xp-points">
+                <li>『<strong>데이터 드리븐 마케팅 101</strong>』 출간(데이터 기반 마케팅 실전 표준 제시)</li>
+                <li>eBay <strong>CDP</strong> 플랫폼 도입 제안 및 비딩 수주 리드</li>
+                <li>롯데온 <strong>Off-Site</strong> 광고 초기 구상 및 운영 구조 설계 참여</li>
+                <li>LG전자 캠페인에 오디언스 데이터 <strong>최초 적용</strong>으로 운영 패러다임 전환</li>
+              </ul>
+              <div class="xp-tags" aria-label="키워드">
+                <span>1st-party Data</span><span>Automation</span><span>Business Design</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Projects</h2>
+            <p class="section-sub">포트폴리오 데이터를 기반으로, 핵심 성과를 카드 형태로 정리했습니다.</p>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-image-container">
+                <img src="./images/digitalfirst-scaleup.jpg" alt="DigitalFirst 창립 및 조직 스케일업" class="project-img" />
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3 class="project-title">DigitalFirst 창립 &amp; 스케일업</h3>
+                  <span class="badge">2015 –</span>
+                </div>
+                <p class="project-desc">법인 설립 초기부터 <strong>조직/미디어/운영 체계</strong>를 구축하고, 데이터 기반 퍼포먼스 전략으로 성장을 견인했습니다.</p>
+                <ul class="project-points">
+                  <li>취급고 <strong>200억 → 1,000억 → 2,000억</strong> 규모로 성장</li>
+                  <li>최대 <strong>170명</strong> 규모 조직 확장 기반 마련(핵심 인력 구성 포함)</li>
+                  <li>글로벌 미디어 중심 전략 수립 및 파트너십 거버넌스 강화</li>
+                </ul>
+                <div class="xp-tags" aria-label="키워드"><span>Scale-up</span><span>Governance</span><span>Performance</span></div>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-image-container">
+                <img src="./images/tradingworks.jpg" alt="TradingWorks ATD 광고 트레이딩 데스크 플랫폼" class="project-img" />
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3 class="project-title">TradingWorks ATD (ATD 플랫폼 PM)</h3>
+                  <span class="badge">2021 – 2023</span>
+                </div>
+                <p class="project-desc">오디언스를 미디어와 연결해 디지털 광고 리소스를 줄이는 <strong>ATD/Ad Ops</strong> 플랫폼의 제품 전략과 확장을 주도했습니다.</p>
+                <ul class="project-points">
+                  <li>Google/NAVER GFA/Kakao/TikTok 등 <strong>미디어 확장</strong>으로 외형 확대</li>
+                  <li><strong>40+ Agency</strong> 사용, 누적 취급고 <strong>3,000억+</strong> 규모 성장</li>
+                  <li><strong>4,300만 ADID</strong> 분석 결과를 캠페인 적용해 효율 극대화</li>
+                  <li>캠페인 생성/운영/리포트 등 <strong>운영 자동화</strong> 설계 및 개발 협업 리드</li>
+                </ul>
+                <div class="xp-tags" aria-label="키워드"><span>ATD</span><span>Automation</span><span>Product</span><span>Data</span></div>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-image-container">
+                <img src="./images/tf2-meta-fmp.jpg" alt="TF2 및 Meta FMP Ad-Tech Badge" class="project-img" />
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3 class="project-title">TF2 · Meta FMP Ad-Tech Badge</h3>
+                  <span class="badge">2016.08</span>
+                </div>
+                <p class="project-desc">Mobile Data 기반 <strong>Audience Targeting</strong> 플랫폼으로 성과를 만들고, 국내 <strong>2번째</strong>로 Meta <strong>FMP Ad-Tech Badge</strong>를 획득했습니다.</p>
+                <ul class="project-points">
+                  <li>Badge 획득 이후 월 평균 <strong>5억+</strong> 수준의 매출 비중 확보</li>
+                  <li>게임 인스톨 효율 <strong>50% 상승</strong>, 서비스앱 리텐션 <strong>37% 상승</strong> 등 성과 창출</li>
+                  <li>자체 DMP와 플랫폼 연결로 <strong>Data On-boarding</strong> 방법론 구축</li>
+                </ul>
+                <div class="xp-tags" aria-label="키워드"><span>Meta FMP</span><span>Mobile Data</span><span>Targeting</span></div>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-image-container">
+                <img src="./images/book-101.jpg" alt="데이터 드리븐 마케팅 101 도서" class="project-img" />
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3 class="project-title">Data Driven Marketing 101</h3>
+                  <span class="badge">Book</span>
+                </div>
+                <p class="project-desc">『<strong>데이터 드리븐 마케팅 101</strong>』 공저로, 데이터 드리븐 마케팅을 <strong>실행하는 방법</strong>을 실전 중심으로 정리했습니다.</p>
+                <ul class="project-points">
+                  <li>실전 파트 집필(데이터 기반 실행 프레임과 운영 관점 정리)</li>
+                  <li>업계 표준화에 기여하는 Thought Leadership 강화</li>
+                </ul>
+                <div class="xp-tags" aria-label="키워드"><span>Thought Leadership</span><span>Framework</span></div>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-image-container">
+                <img src="./images/fullfunnel-global.jpg" alt="글로벌 풀퍼널 캠페인 및 클라이언트 운영" class="project-img" />
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3 class="project-title">Global Full-funnel 운영</h3>
+                  <span class="badge">Clients</span>
+                </div>
+                <p class="project-desc">LG전자(56개국), AliExpress, 롯데온, 11번가(국내/태국) 등에서 <strong>풀퍼널</strong> 전략과 운영 표준을 구축해 ROI를 극대화했습니다.</p>
+                <ul class="project-points">
+                  <li>대규모 글로벌 캠페인 운영 표준 가이드 수립 및 지속 최적화</li>
+                  <li>1st-party/3rd-party 데이터 결합 및 오디언스 전략 적용</li>
+                  <li>조직/대행사/광고주 이해관계자 협업을 통한 장기 관계 구축</li>
+                </ul>
+                <div class="xp-tags" aria-label="키워드"><span>Full-funnel</span><span>ROI</span><span>Global Ops</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="coffeechat">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Coffee Chat</h2>
+            <p class="section-sub">간단히 메시지를 남겨주시면, 확인 후 답장드릴게요.</p>
+          </div>
+          <div class="grid-2">
+            <div class="card reveal">
+              <h3>이런 주제로 이야기해요</h3>
+              <ul class="bullets">
+                <li><strong>미디어 거버넌스</strong> 및 글로벌 파트너십 전략</li>
+                <li><strong>Ad-Tech/플랫폼</strong> 제품 전략, 로드맵, 운영 자동화</li>
+                <li><strong>데이터 기반 성장</strong>과 풀퍼널 퍼포먼스 최적화</li>
+                <li>커머스 확장, 1st-party 데이터 활용 전략</li>
+              </ul>
+              <div class="note">
+                <p class="note-title">안내</p>
+                <p class="note-body">이 페이지는 백엔드 없이 동작하는 정적 사이트 예시라서, 폼 제출 시 전송 대신 화면에 확인 메시지를 보여줍니다. 실제 전송이 필요하면 EmailJS/폼스프리 같은 서비스를 연결하면 됩니다.</p>
+              </div>
+            </div>
+            <form class="card form reveal" id="coffeeForm">
+              <div class="field">
+                <label for="name">이름</label>
+                <input id="name" name="name" type="text" autocomplete="name" required minlength="2" />
+                <p class="help" id="nameHelp">2글자 이상 입력해주세요.</p>
+              </div>
+              <div class="field">
+                <label for="email">이메일</label>
+                <input id="email" name="email" type="email" autocomplete="email" required inputmode="email" />
+                <p class="help" id="emailHelp">답장 받을 이메일을 입력해주세요.</p>
+              </div>
+              <div class="field">
+                <label for="message">메시지</label>
+                <textarea id="message" name="message" rows="6" required minlength="10" placeholder="예: 어떤 주제로 이야기하고 싶은지, 가능한 시간대 등을 적어주세요."></textarea>
+                <p class="help" id="messageHelp">10자 이상 작성해주세요.</p>
+              </div>
+              <div class="form-actions">
+                <button class="btn primary" type="submit">보내기</button>
+                <button class="btn ghost" type="reset">초기화</button>
+              </div>
+              <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="footer-text">© <span id="year"></span> <span id="footerName">계승범</span>. All rights reserved.</p>
+        <a class="to-top" href="#top">맨 위로</a>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        if (typeof emailjs !== "undefined") {
+          emailjs.init("YZY987HC79x42U6K-");
+        }
+      })();
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
