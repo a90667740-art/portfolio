@@ -103,6 +103,7 @@ function initMobileNav() {
   const setOpen = (open) => {
     btn.setAttribute("aria-expanded", String(open));
     menu.classList.toggle("open", open);
+    document.body.classList.toggle("nav-menu-open", open);
   };
 
   btn.addEventListener("click", () => {
@@ -123,6 +124,10 @@ function initMobileNav() {
   });
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") setOpen(false);
+  });
+
+  window.addEventListener("resize", () => {
+    if (!window.matchMedia("(max-width: 720px)").matches) setOpen(false);
   });
 }
 
